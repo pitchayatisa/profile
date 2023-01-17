@@ -8,6 +8,7 @@ import React, { useState, useEffect } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Atropos from 'atropos/react';
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -142,9 +143,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <a target={`_blank`} onClick={onViewResume} className="cursor-pointer transition ease-in duration-150 hover:-translate-y-1 hover:scale-110 inline-block rounded-full bg-orange-500 px-4 py-1 my-0 sm:my-3 text-base font-semibold leading-7 text-white shadow-md hover:bg-orange-600">
+              <Link href="#" target={`_blank`} onClick={onViewResume} className="cursor-pointer transition ease-in duration-150 hover:-translate-y-1 hover:scale-110 inline-block rounded-full bg-orange-500 px-4 py-1 my-0 sm:my-3 text-base font-semibold leading-7 text-white shadow-md hover:bg-orange-600">
                 RESUME
-              </a>
+              </Link>
             </h2>
           </div>
         </div>
@@ -178,16 +179,16 @@ export default function Home() {
               <span className="font-medium block my-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </span>
-              <a href="/about" className="transition ease-in duration-150 hover:-translate-y-1 hover:scale-110 inline-block rounded-full bg-orange-500 px-4 py-1 my-3 text-base font-semibold leading-7 text-white shadow-md hover:bg-orange-600">
+              <Link href="/about" className="transition ease-in duration-150 hover:-translate-y-1 hover:scale-110 inline-block rounded-full bg-orange-500 px-4 py-1 my-3 text-base font-semibold leading-7 text-white shadow-md hover:bg-orange-600">
                 MORE ABOUT ME
-              </a>
+              </Link>
             </h2>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#fae0c3] h-screen">
           <div className="flex order-last lg:order-none items-center justify-center w-full space-x-5">
             <div className="w-28">
-              <a href="https://web.facebook.com/pitchayatisa" target={`_blank`} className="cursor-pointer">
+              <Link href="https://web.facebook.com/pitchayatisa" target={`_blank`} className="cursor-pointer">
                 <Atropos className="my-atropos" shadowScale={1} shadowOffset={50}>
                   <img src="/images/facebook.webp"
                     data-atropos-offset="-10"
@@ -196,10 +197,10 @@ export default function Home() {
                     height={100}
                   />
                 </Atropos>
-              </a>
+              </Link>
             </div>
             <div className="w-28">
-              <a href="https://www.instagram.com/_pitchayatisa" target={`_blank`} className="cursor-pointer">
+              <Link href="https://www.instagram.com/_pitchayatisa" target={`_blank`} className="cursor-pointer">
                 <Atropos className="my-atropos" shadowScale={1} shadowOffset={50}>
                   <img src="/images/instagram.webp"
                     data-atropos-offset="-10"
@@ -208,10 +209,10 @@ export default function Home() {
                     height={100}
                   />
                 </Atropos>
-              </a>
+              </Link>
             </div>
             <div className="w-28">
-              <a href="https://www.linkedin.com/in/pitchayatisa-hirunwong-951469233" target={`_blank`} className="cursor-pointer">
+              <Link href="https://www.linkedin.com/in/pitchayatisa-hirunwong-951469233" target={`_blank`} className="cursor-pointer">
                 <Atropos className="my-atropos" shadowScale={1} shadowOffset={50}>
                   <img src="/images/linkedin.webp"
                     data-atropos-offset="-10"
@@ -220,10 +221,10 @@ export default function Home() {
                     height={100}
                   />
                 </Atropos>
-              </a>
+              </Link>
             </div>
             <div className="w-28">
-              <a href="https://web.facebook.com/pitchayatisa" target={`_blank`} className="cursor-pointer">
+              <Link href="https://web.facebook.com/pitchayatisa" target={`_blank`} className="cursor-pointer">
                 <Atropos className="my-atropos" shadowScale={1} shadowOffset={50}>
                   <img src="/images/instagram.webp"
                     data-atropos-offset="-10"
@@ -232,7 +233,7 @@ export default function Home() {
                     height={100}
                   />
                 </Atropos>
-              </a>
+              </Link>
             </div>
           </div>
           {/* eslint-disable-next-line jsx-a11y/alt-text */}
